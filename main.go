@@ -53,7 +53,7 @@ func main(){
 	} else if age >= 13{
 		fmt.Println("Teen")
 	} else {
-		fmt.Println("Child hello childd")
+		fmt.Println("Child ")
 	}
 	}
 

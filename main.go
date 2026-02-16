@@ -36,7 +36,7 @@ import (
 		return "Read only"
 
 	}
-}*/
+}
 
 func add(a int, b int){
 	fmt.Println(a + b)
@@ -193,7 +193,7 @@ func checkNumber(num int)(string, bool) {
 		return "Even", true
 	}
 	return "Odd", false 
-}
+}*/
 
 //===============step C===============//
 //topic Array and Slice===============//
@@ -203,6 +203,11 @@ func checkNumber(num int)(string, bool) {
 
 func main(){
 	//==================step 3========//
+	//slice=========================
+	numbers := []int{10, 20, 30}
+	numbers
+
+	//array=========================
 	var books [11]string 
 	books[0] = "Golang Basics"
 	books[1] = "Web development"
@@ -225,8 +230,9 @@ func main(){
 	for index, value := range books {
 		fmt.Println(index, value)
 	}
+}
 	//chalange
-	numbers := []int{1,2,3,4,5}
+	/*numbers := []int{1,2,3,4,5}
 	for _, n := range numbers{
 	result6, ok :=checkNumber(n)
 	fmt.Println(n, "->", result6, ok)

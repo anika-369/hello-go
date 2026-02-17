@@ -1,7 +1,7 @@
 package main
 
 import (
-	"errors"
+	//Anika Sultana
 	"fmt"
 	//"os/user"
 	//"weak"
@@ -198,14 +198,35 @@ func checkNumber(num int)(string, bool) {
 //===============step C===============//
 //topic Array and Slice===============//
 
+func change(s []int){
+	s[0] = 100
+	s[2] = 200
+}
+
 
 
 
 func main(){
 	//==================step 3========//
 	//slice=========================
+	num := []int{10, 20, 30, 40, 50, 60}
+	change(num)
+	fmt.Println(num)
+	fmt.Println(len(num))
+	fmt.Println(cap(num))
+	
+	part := num[1:4]
+	fmt.Println(part)
+
 	numbers := []int{10, 20, 30}
-	numbers
+	numbers = append(numbers, 40)
+	numbers = append(numbers, 50)
+	fmt.Println(numbers)
+
+	num = append(num[:2], num[3:]...)
+	fmt.Println(num)
+
+	
 
 	//array=========================
 	var books [11]string 
@@ -231,6 +252,8 @@ func main(){
 		fmt.Println(index, value)
 	}
 }
+
+
 	//chalange
 	/*numbers := []int{1,2,3,4,5}
 	for _, n := range numbers{
